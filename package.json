@@ -1,0 +1,39 @@
+{
+    "name": "cave-developer-docs",
+    "version": "1.0.0",
+    "description": "Echo Cave developer docs.",
+    "main": "index.js",
+    "author": "RDPStudio <noreply@rdpstudio.top>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "precommit": "lint-staged",
+        "docs:dev": "vuepress dev docs --port 10000",
+        "docs:build": "vuepress build docs",
+        "postinstall": "husky install"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "12.1.4",
+        "@commitlint/config-conventional": "12.1.4",
+        "@vue/babel-preset-app": "4.5.13",
+        "@vuepress/plugin-active-header-links": "1.8.2",
+        "@vuepress/plugin-back-to-top": "1.8.2",
+        "@vuepress/plugin-google-analytics": "1.8.2",
+        "@vuepress/plugin-pwa": "1.8.2",
+        "add": "2.0.6",
+        "eslint": "7.26.0",
+        "eslint-config-standard": "16.0.2",
+        "eslint-plugin-import": "2.23.2",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "5.1.0",
+        "eslint-plugin-standard": "5.0.0",
+        "eslint-plugin-vue": "7.9.0",
+        "husky": "^6.0.0",
+        "vuepress": "1.8.2",
+        "vuepress-plugin-clean-urls": "1.1.2",
+        "vuepress-plugin-container": "2.1.5",
+        "vuepress-plugin-reading-time": "0.1.1",
+        "vuepress-plugin-smooth-scroll": "0.0.10",
+        "webpack-dev-middleware": "4.3.0"
+    }
+}
